@@ -9,7 +9,7 @@
 
 /* universal settings */
 html {
-  background-image: url("../images/Background.jpg");
+  background-image: url("./Background.jpg");
 }
 
 body {
@@ -29,6 +29,11 @@ h4,
 p {
   margin: 0;
   padding: 0;
+}
+
+p {
+  text-indent: 20px;
+  text-align: justify;
 }
 
 /* Header */
@@ -67,20 +72,17 @@ header h3 {
   display: none;
   position: absolute;
   top: 100%;
-  z-index: 1;
 }
 
 #nav_menu ul ul li {
   float: none;
   position: relative;
-  z-index: 2;
 }
 
 #nav_menu ul ul li ul {
   position: absolute;
   left: 100%;
   top: 0;
-  z-index: 2;
 }
 
 #nav_menu ul li:hover > ul {
@@ -127,18 +129,104 @@ header h3 {
 /* Main article section */
 section {
   float: left;
-  width: auto;
+  width: 50%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.image_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image_container figure {
+  margin: 0;
+}
+
+.image_container figcaption {
+  color: var(--text-color-two);
+  font-weight: bolder;
+}
+
+#image1 {
+  background-image: url("./animal2.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  border: 1px solid var(--border-color);
+}
+
+#image1:hover {
+  background-image: url("./animal2_v2.jpg");
+}
+
+#image2 {
+  background-image: url("./animal1.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  border: 1px solid var(--border-color);
+}
+
+#image2:hover {
+  background-image: url("./animal1_v2.jpg");
+}
+
+#image3 {
+  background-image: url("./animal3.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  border: 1px solid var(--border-color);
+}
+
+#image3:hover {
+  background-image: url("./animal3_v2.jpg");
+}
+
+#image4 {
+  background-image: url("./animal4.png");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  border: 1px solid var(--border-color);
+}
+
+#image4:hover {
+  background-image: url("./animal4_v2.png");
+}
+
+#image5 {
+  background-image: url("./animal5.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  border: 1px solid var(--border-color);
+}
+
+#image5:hover {
+  background-image: url("./animal5_v2.png");
+}
+
+#image6 {
+  background-image: url("./animal6.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  border: 1px solid var(--border-color);
+}
+
+#image6:hover {
+  background-image: url("./animal6_v2.jpg");
 }
 
 /* Side bar B */
 #sideBarB {
   float: right;
   width: auto;
-  padding-left: 15px;
   padding-right: 15px;
-  margin-top: 20px;
+  padding-top: 15px;
 }
 
 #sideBarB ul {
@@ -159,11 +247,16 @@ section {
 
 /* Footer */
 footer {
-  border-top: 2px solid var(--border-color);
   clear: both;
 }
 
 footer p {
   text-align: center;
   padding-top: 20px;
+}
+
+#image {
+  background-image: url("../images/Background.jpg");
+  width: 50px;
+  height: 50px;
 }
