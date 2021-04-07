@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles//feedback.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>The animals in Animal Crossing</title>
+  </head>
+  <body>
+    <header>
+      <img src="/images/AnimalCrossing_Logo.jpg" alt="Animal Crossing Logo" />
+      <h2>The animals in Animal Crossing</h2>
+      <h3>The most popular game on Nintendo Switch!</h3>
+    </header>
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/video.html">Media</a></li>
+        <li>
+          <a href="/image.html">Image</a>
+          <ul>
+            <li><a href="#">NPCs</a></li>
+            <li><a href="#">Seasons</a></li>
+            <li>
+              <a href="#">Animals</a>
+              <ul>
+                <li><a href="#">Cats</a></li>
+                <li><a href="#">Rabbits</a></li>
+                <li><a href="#">Octopus</a></li>
+              </ul>
+            </li>
+            <li class="lastItem"><a href="#">Special occasions</a></li>
+          </ul>
+        </li>
+        <li><a href="/feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <main>
+      <aside id="sideBarA">
+        <!--navigation area composed of thumbnail images and text-->
+        <figure>
+          <a href="/index.html"
+            ><img src="/images/nav_image1.png" alt="" width="85"
+          /></a>
+          <figurecaption>
+            <p>Home</p>
+          </figurecaption>
+        </figure>
+        <figure>
+          <a href="/video.html"
+            ><img src="/images/nav_image2.png" alt="" width="85"
+          /></a>
+          <figurecaption>
+            <p>Media</p>
+          </figurecaption>
+        </figure>
+        <figure>
+          <a href="/image.html"
+            ><img src="/images/nav_image3.png" alt="" width="85"
+          /></a>
+          <figurecaption>
+            <p>Image</p>
+          </figurecaption>
+        </figure>
+        <figure>
+          <a href="/feedback.html"
+            ><img src="/images/nav_image4.jpg" alt="" width="85"
+          /></a>
+          <figurecaption>
+            <p>Feedback</p>
+          </figurecaption>
+        </figure>
+      </aside>
+
+      <section>
+        <!--feedback page-->
+        <form
+          action="get"
+          action="register_account.html"
+          id="registration_form"
+        >
+          <fieldset>
+            <legend>Your information</legend>
+            <label for="text">Name</label>
+            <input type="text" name="name" id="name" required autofocus /><br />
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required /><br />
+            <label for="text">Address</label>
+            <input type="text" name="address" id="address" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Knowledge about Animal Crossing: New Horizons</legend>
+            <label for="knowledge">Do you know about this game?</label>
+            <select name="knowledge" id="knowledge">
+              <option value="select">----Select----</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="aLittle">A little</option></select
+            ><br />
+            <label for="buy">Would you buy Animal Crossing?</label>
+            <select name="buy" id="buy">
+              <option value="select">----Select----</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="maybe">Maybe</option></select
+            ><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>What kind of animal is your favourite?</legend>
+            <input type="checkbox" name="hero" id="check" />
+            <label>Cats</label>
+            <br />
+            <input type="checkbox" name="hero" id="check" />
+            <label>Dogs</label>
+            <br />
+            <input type="checkbox" name="hero" id="check" />
+            <label>Rabbits</label>
+            <br />
+            <input type="checkbox" name="hero" id="check" />
+            <label>Octopus</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Comments:</legend>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Enter your comments here"
+            ></textarea>
+          </fieldset>
+
+          <fieldset id="buttons">
+            <legend>Submit Your Feedback</legend>
+            <label>&nbsp;</label>
+            <input type="submit" value="Submit" id="submit" />
+            <input type="reset" value="Reset fields" id="reset" />
+          </fieldset>
+        </form>
+      </section>
+      <aside id="sideBarB">
+        <fieldset>
+          <legend>Do you like video games?</legend>
+          <input type="radio" name="yes" id="yes" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" name="no" id="no" />
+          <label for="no">No</label><br />
+          <input type="radio" name="aBit" id="aBit" />
+          <label for="aBit">A bit</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Would you try video games?</legend>
+          <input type="checkbox" name="yes" id="yes" />
+          <label for="yes">Yes</label><br />
+          <input type="checkbox" name="no" id="no" />
+          <label for="no">No</label><br />
+          <input type="checkbox" name="maybe" id="maybe" />
+          <label for="maybe">Maybe</label><br />
+          <input type="checkbox" name="never" id="never" />
+          <label for="never">Never</label>
+        </fieldset>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2020 Li Deng (7092430)</p>
+    </footer>
+  </body>
+</html>

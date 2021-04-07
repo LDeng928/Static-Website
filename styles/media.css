@@ -1,0 +1,36 @@
+/* Main article section */
+section {
+  float: left;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  border-left: 2px solid var(--border-color);
+}
+
+.media_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#audioplayer {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.iframe_container {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe_container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
